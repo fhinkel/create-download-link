@@ -1,0 +1,21 @@
+{
+  "name": "create-download-link",
+  "version": "1.0.0",
+  "description": "Create link to download text as file",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fhinkel/shell-emulator.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fhinkel/shell-emulator/issues"
+  },
+  "homepage": "https://github.com/fhinkel/shell-emulator#readme"
+}
