@@ -6,9 +6,12 @@ var opt = {
 document = {
     createElement: function() {
         return {
-            attr: function() {},
-            text: function() {}
+            setAttribute: function() {},
+            appendChild: function() {}
         };
+    },
+    createTextNode: function () {
+        
     }
 };
 
