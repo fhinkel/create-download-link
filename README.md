@@ -1,8 +1,16 @@
 # create-download-link
 
-*create-download-link* returns an anchor element. When the element is clicked, a file is
-downloaded. Specify the content of the file, the filename to be used, and
- the title of the anchor element.
+*create-download-link* returns the following DOM element:
+```html
+<a href="data:application/octet-stream,data" download="filename">title</a>
+```
+
+Specify the content of the file as a string, the filename to be used, and
+the title of the anchor element. When the element is clicked, a file is
+downloaded.
+
+## Example
+
 
 ```javascript
 var createDownloadLink = require('create-download-link');
@@ -16,7 +24,4 @@ var opt = {
 var anchor = createDownloadLink(opt);
 ```
 
-Include the resulting ```anchor``` in your DOM. It will behave similar to the following link:
-[Click to download your file](https://raw.githubusercontent.com/fhinkel/create-download-link/master/example.txt).
 
-    // <a href="data:application/octet-stream,data" download="filename">title</a>
