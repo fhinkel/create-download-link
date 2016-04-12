@@ -11,10 +11,10 @@ var opt = {
     data: 'Here is the content of the file',
     title: 'Click to download your file',
     filename: 'example.txt'
-}
+};
 
 var anchor = createDownloadLink(opt);
 ```
 
-Include the resulting ```anchor``` in your DOM. It will behave like the following link:
+Include the resulting ```anchor``` in your DOM. It will behave similar to the following link:
 [Click to download your file](https://raw.githubusercontent.com/fhinkel/create-download-link/master/example.txt).
