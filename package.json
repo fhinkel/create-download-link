@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fhinkel/shell-emulator.git"
+    "url": "git+https://github.com/fhinkel/create-download-link.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fhinkel/shell-emulator/issues"
+    "url": "https://github.com/fhinkel/create-download-link/issues"
   },
-  "homepage": "https://github.com/fhinkel/shell-emulator#readme"
+  "homepage": "https://github.com/fhinkel/create-download-link#readme"
 }
