@@ -1,6 +1,6 @@
 {
   "name": "create-download-link",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create link to download text as file",
   "main": "index.js",
   "dependencies": {},
