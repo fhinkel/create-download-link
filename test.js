@@ -1,20 +1,38 @@
+var assert = require('chai').assert;
+var jsdom = require('jsdom-global');
 var createDownloadLink = require('./index.js');
 
-var opt = {
-};
+describe('When you invoke create-download-link,', function() {
 
-document = {
-    createElement: function() {
-        return {
-            setAttribute: function() {},
-            appendChild: function() {}
+    before(function () {
+        this.jsdom = jsdom();
+
+        var opt = {
+            data: 'nice data',
+            title: 'nice title',
+            filename: 'nice filename'
         };
-    },
-    createTextNode: function () {
-        
-    }
-};
+        this.anchor = createDownloadLink(opt);
+    });
 
-createDownloadLink(opt);
+    after(function () {
+        this.jsdom(); // cleanup
+    });
 
-console.log('Done testing. All good');
+
+    describe('the link', function () {
+        it('should be of type anchor', function () {
+            assert.equal(this.anchor.nodeName, 'A');
+        });
+        it('should have the correct attributes', function () {
+            assert.equal(this.anchor.getAttribute('href'),'data:application/octet-stream,nice%20data');
+            assert.equal(this.anchor.getAttribute('download'),'nice filename');
+        });
+        it('should have a title', function() {
+            assert.equal(this.anchor.childNodes.length, 1);
+            assert.equal(this.anchor.firstChild.nodeValue, 'nice title');
+        });
+    });
+});
+
+

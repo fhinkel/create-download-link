@@ -6,7 +6,7 @@ module.exports = function (opt) {
     
     var createLink = function (text, filename) {
         var link = 'data:application/octet-stream,' + encodeURIComponent(text);
-        var anchor = document.createElement("A");
+        var anchor = document.createElement('a');
         anchor.setAttribute('href', link);
         anchor.setAttribute('download', filename);
         return anchor;
