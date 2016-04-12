@@ -7,7 +7,7 @@ describe('When you invoke create-download-link,', function() {
         var opt = {
             data: 'nice data',
             title: 'nice title',
-            filename: 'nice filename'
+            filename: 'filename.txt'
         };
         this.anchor = createDownloadLink(opt);
     });
@@ -18,7 +18,7 @@ describe('When you invoke create-download-link,', function() {
         });
         it('should have the correct attributes', function () {
             assert.equal(this.anchor.getAttribute('href'),'data:application/octet-stream,nice%20data');
-            assert.equal(this.anchor.getAttribute('download'),'nice filename');
+            assert.equal(this.anchor.getAttribute('download'),'filename.txt');
         });
         it('should have a title', function() {
             assert.equal(this.anchor.childNodes.length, 1);
