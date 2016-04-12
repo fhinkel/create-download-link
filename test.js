@@ -1,12 +1,9 @@
 var assert = require('chai').assert;
-var jsdom = require('jsdom-global');
 var createDownloadLink = require('./index.js');
 
 describe('When you invoke create-download-link,', function() {
 
     before(function () {
-        this.jsdom = jsdom();
-
         var opt = {
             data: 'nice data',
             title: 'nice title',
@@ -14,11 +11,6 @@ describe('When you invoke create-download-link,', function() {
         };
         this.anchor = createDownloadLink(opt);
     });
-
-    after(function () {
-        this.jsdom(); // cleanup
-    });
-
 
     describe('the link', function () {
         it('should be of type anchor', function () {
