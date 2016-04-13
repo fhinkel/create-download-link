@@ -28,13 +28,31 @@ describe('When you invoke create-download-link,', function() {
   });
   describe('creation', function() {
     it('should fail if data is missing', function() {
-
+      var opt = {
+        title: 'nice title',
+        filename: 'filename.txt'
+      };
+      assert.throw(function() {
+        createDownloadLink(opt);
+      }, Error, 'No data provided to create-download-link');
     });
-    it('should fail if data is missing', function() {
-
+    it('should fail if title is missing', function() {
+      var opt = {
+        data: 'nice data',
+        filename: 'filename.txt'
+      };
+      assert.throw(function() {
+        createDownloadLink(opt);
+      }, Error, 'No title provided to create-download-link');
     });
-    it('should fail if data is missing', function() {
-
+    it('should fail if filename is missing', function() {
+      var opt = {
+        data: 'nice data',
+        title: 'nice title'
+      };
+      assert.throw(function() {
+        createDownloadLink(opt);
+      }, Error, 'No filename provided to create-download-link');
     });
   });
 });
