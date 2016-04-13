@@ -4,16 +4,21 @@
 [![NPM](https://nodei.co/npm/create-download-link.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/create-download-link/)
 # create-download-link
 
-*create-download-link* returns the following DOM element:
+With this package, you can easily create links for downloading content as files.
+*create-download-link* returns a DOM element like the following:
 ```html
 <a href="data:application/octet-stream,data" download="filename">title</a>
 ```
 
-Specify the content of the file as a string, the filename to be used, and
-the title of the anchor element. When the element is clicked, a file is
-downloaded.
+Specify the
+- **content** of the file as a string,
+- the **filename** to be used, and
+- the **title** of the anchor element.
 
-## Example
+When the element is clicked, a file is
+downloaded and saved as *filename*.
+
+## Usage
 
 
 ```javascript
