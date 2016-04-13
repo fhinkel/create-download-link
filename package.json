@@ -17,7 +17,7 @@
   },
   "scripts": {
     "test": "mocha -r jsdom-global/register test.js",
-    "coverage": "istanbul cover _mocha -- -r jsdom-global/register test.js",
+    "coverage": "istanbul cover _mocha -- -r jsdom-global/register test.js"
   },
   "repository": {
     "type": "git",
