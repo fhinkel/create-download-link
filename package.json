@@ -6,6 +6,8 @@
   "dependencies": {},
   "devDependencies": {
     "chai": "3.5.0",
+    "coveralls": "^2.11.9",
+    "istanbul": "^0.4.3",
     "jsdom": "8.3.1",
     "jsdom-global": "1.7.0",
     "mocha": "2.4.5"
@@ -14,7 +16,8 @@
     "node": ">=4.0.0"
   },
   "scripts": {
-    "test": "mocha -r jsdom-global/register test.js"
+    "test": "mocha -r jsdom-global/register test.js",
+    "coverage": "istanbul cover _mocha -- -r jsdom-global/register test.js",
   },
   "repository": {
     "type": "git",
