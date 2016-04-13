@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/fhinkel/create-download-link.svg?branch=master)](https://travis-ci.org/fhinkel/create-download-link)
-
+[![Coverage Status](https://coveralls.io/repos/github/fhinkel/create-download-link/badge.svg?branch=master)](https://coveralls.io/github/fhinkel/create-download-link?branch=master)
 # create-download-link
 
 *create-download-link* returns the following DOM element:
