@@ -5,7 +5,7 @@ module.exports = function (opt) {
     var filename = opt.filename;
 
     // creates
-    // <a href="data:application/octet-stream,data" download="filename">title</a>
+    // <a href="data:application/octet-stream,DATA" download="FILENAME">TITLE</a>
 
     var createDownloadableFileLink = function (data, filename) {
         var link = 'data:application/octet-stream,' + encodeURIComponent(data);

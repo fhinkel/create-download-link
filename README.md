@@ -7,7 +7,7 @@
 With this package, you can easily create links for downloading content as files.
 *create-download-link* returns a DOM element like the following:
 ```html
-<a href="data:application/octet-stream,data" download="filename">title</a>
+<a href="data:application/octet-stream,DATA" download="FILENAME">TITLE</a>
 ```
 
 Specify the
@@ -16,7 +16,7 @@ Specify the
 - the **title** of the anchor element.
 
 When the element is clicked, a file is
-downloaded and saved as *filename*.
+downloaded and saved as *FILENAME*.
 
 ## Usage
 
